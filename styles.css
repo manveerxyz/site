@@ -1,0 +1,142 @@
+* {
+    font-size: 13.3px;
+}
+body, html {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* color: #005FC6; */
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+@font-face {
+    font-family: 'OTBrut Italic';
+    src: url('fonts/OTBrut-Italic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'OTBrut Italic Mono';
+    src: url('fonts/OTBrut-ItalicMono.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'OTBrut Regular';
+    src: url('fonts/OTBrut-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'OTBrut Regular Mono';
+    src: url('fonts/OTBrut-RegularMono.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Berkeley Mono Regular';
+    src: url('fonts/BerkeleyMono-Regular.ttf') format('truetype');
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    width: calc(100% - 8px);
+    height: 100vh;
+    max-width: 1328px;
+    padding: 4px;
+}
+.left-container {
+    flex: 1;
+    min-width: 662px;
+}
+.right-container {
+    flex: 1;
+}
+
+.timeline {
+    margin-left: -20px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Creates three columns */
+    grid-template-rows: repeat(3, 1fr);    /* Creates three rows */
+    gap: 4px;
+}
+.image-gallery img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+h1 {
+    font-size: 96px;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-family: 'OTBrut Italic', serif;
+    font-weight: 400;
+}
+.subtitle {
+    font-size: 32px;
+    font-family: 'OTBrut Italic', serif;
+    font-weight: 400;
+}
+h3, p, ul, li, a {
+    font-family: 'Berkeley Mono Regular', monospace;
+    font-size: 13.3px;
+    line-height: 1.6;
+}
+a {
+    display: inline-block;
+    margin-top: 24px;
+    color: black;
+    text-decoration: underline;
+}
+
+@media (max-width: 1168px) {
+    body, html {
+        overflow-x: scroll;
+        overflow-y: scroll;
+    }
+    .title,
+    .subtitle,
+    p, a {
+        width: 100%;
+        text-align: center;
+    }
+    a {
+        margin-top: 48px;
+    }
+    .content {
+        flex-direction: column;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        height: 100%;
+        justify-content: flex-start;
+    }
+    .left-container {
+        padding: 24px 0 48px;
+        flex: unset;
+        min-width: unset;
+    }
+    .right-container {
+        flex: unset;
+        padding-bottom: 4px;
+    }
+}
+
