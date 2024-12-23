@@ -20,23 +20,8 @@ body, html {
 }
 
 @font-face {
-    font-family: 'OTBrut Italic';
-    src: url('fonts/OTBrut-Italic.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'OTBrut Italic Mono';
-    src: url('fonts/OTBrut-ItalicMono.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'OTBrut Regular';
-    src: url('fonts/OTBrut-Regular.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'OTBrut Regular Mono';
-    src: url('fonts/OTBrut-RegularMono.otf') format('opentype');
+    font-family: 'PPPlayground Medium';
+    src: url('fonts/PPPlayground-Medium.otf') format('opentype');
 }
 
 @font-face {
@@ -88,12 +73,12 @@ h1 {
 }
 
 .title {
-    font-family: 'OTBrut Italic', serif;
+    font-family: 'PPPlayground Medium', serif;
     font-weight: 400;
 }
 .subtitle {
     font-size: 32px;
-    font-family: 'OTBrut Italic', serif;
+    font-family: 'PPPlayground Medium', serif;
     font-weight: 400;
 }
 h3, p, ul, li, a {
@@ -103,7 +88,7 @@ h3, p, ul, li, a {
 }
 a {
     display: inline-block;
-    margin-top: 24px;
+    padding-bottom: 4px;
     color: black;
     text-decoration: underline;
 }
