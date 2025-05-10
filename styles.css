@@ -48,9 +48,12 @@ body, html {
 .right-container {
     flex: 1;
 }
-
-.timeline {
-    margin-left: -20px;
+.main-subtext {
+    margin-bottom: 32px;
+}
+.main-subtext a {
+    padding-bottom: 0;
+    display: inline;
 }
 
 .image-gallery {
@@ -104,8 +107,12 @@ a {
         width: 100%;
         text-align: center;
     }
-    a {
-        margin-top: 48px;
+    .main-subtext {
+        margin-bottom: 24px;
+    }
+    .main-subtext a {
+        margin-top: 0;
+        display: inline;
     }
     .content {
         flex-direction: column;
