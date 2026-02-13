@@ -40,6 +40,7 @@ body, html {
     align-items: center;
     justify-content: center;
     text-align: center;
+    box-sizing: border-box;
     width: 100%;
     max-width: 660px;
     height: 100vh;
@@ -117,6 +118,7 @@ a:hover {
     .content {
         height: auto;
         margin-top: -64px;
+        padding: 0 8px;
         justify-content: flex-start;
     }
     .main-subtext {
