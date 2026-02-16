@@ -30,7 +30,7 @@
     <!-- yes i raw dogged html and css -->
 
     <div class="content">
-        <video src="images/orb.mp4" class="orb-gif" autoplay loop muted playsinline></video>
+        <video src="images/orb.mp4" class="orb-gif" autoplay loop muted playsinline disablepictureinpicture disableremoteplayback></video>
         <h1 class="title">Manveer</h1>
         <p class="translation">Meaning mind·brother, or brother of the mind.</p>
 
@@ -49,6 +49,14 @@
         <a href="https://x.com/manveerxyz" class="link" target="_blank">x.com/manveerxyz</a>
         <a href="https://www.are.na/manveer" class="link" target="_blank">are.na/manveer</a>
     </div>
+
+    <script>
+        var orb = document.querySelector('.orb-gif');
+        orb.play().catch(function() {});
+        document.addEventListener('visibilitychange', function() {
+            if (!document.hidden) orb.play().catch(function() {});
+        });
+    </script>
 </body>
 
 </html>

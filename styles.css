@@ -75,6 +75,14 @@ body, html {
 .orb-gif::-webkit-media-controls {
     display: none !important;
 }
+.orb-gif::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    -webkit-appearance: none;
+}
+.orb-gif::-webkit-media-controls-panel {
+    display: none !important;
+    -webkit-appearance: none;
+}
 
 h1 {
     font-size: 72px;
