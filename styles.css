@@ -118,6 +118,9 @@ a {
 a:hover {
     text-decoration: none;
 }
+.orb-mobile {
+    display: none;
+}
 .link {
     opacity: 0.25;
 }
@@ -143,6 +146,9 @@ a:hover {
     .orb-gif {
         width: 44%;
     }
+    h1 {
+        font-size: 64px;
+    }
     h3, p, ul, li, a {
         font-size: 12px;
     }
@@ -150,6 +156,12 @@ a:hover {
         display: none;
     }
     .main-subtext-mobile {
+        display: block;
+    }
+    .orb-desktop {
+        display: none;
+    }
+    .orb-mobile {
         display: block;
     }
 }
